@@ -1,5 +1,6 @@
 // src/App.jsx
 import Ingredients from './components/Ingredients';
+import Products from './components/Products';
 
 /**
  * Componente principal de la aplicación.
@@ -14,9 +15,17 @@ function App() {
         </div>
       </header>
       <main className="container mx-auto px-4 py-8">
-        <h2 className="text-2xl font-semibold mb-4">Gestión de Ingredientes</h2>
-        {/* Aquí se renderiza el componente que gestiona los ingredientes */}
-        <Ingredients />
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">Gestión de Ingredientes</h2>
+          <Ingredients />
+        </div>
+        
+        <hr className="my-8" />
+
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">Nuestros Productos</h2>
+          <Products />
+        </div>
       </main>
     </div>
   )
